@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Isalem Glaçon – Glaçons alimentaires à Angré, Abidjan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f2fafc;--surface:#fff;--ink:#0b3442;--muted:#4d6b76;--frost:#c4eaf2;--line:#d3e6ec;--accent:#e8700a;--accent-ink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1f27;--surface:#0f2c37;--ink:#e6f6fa;--muted:#9bbcc7;--frost:#17404e;--line:#1f4755;--accent:#ff8a2a;--accent-ink:#1b0e00}}
+:root[data-theme="dark"]{--bg:#0a1f27;--surface:#0f2c37;--ink:#e6f6fa;--muted:#9bbcc7;--frost:#17404e;--line:#1f4755;--accent:#ff8a2a;--accent-ink:#1b0e00}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.08;margin:0}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px}
+.logo{font:800 20px "Bricolage Grotesque",sans-serif;text-decoration:none}
+nav{display:flex;gap:16px;overflow-x:auto;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted);white-space:nowrap}
+nav a:hover,nav a:focus-visible{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hero{padding:44px 0 36px}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;background:var(--frost);padding:6px 14px;border-radius:99px}
+.dot{width:9px;height:9px;border-radius:50%;background:#2aa56a}
+.status.closed .dot{background:#c0392b}
+h1{font-size:clamp(40px,10vw,76px);font-weight:800;margin:18px 0 14px;letter-spacing:-.02em}
+.lead{font-size:19px;color:var(--muted);max-width:34em;margin:0 0 24px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:14px 22px;border-radius:12px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,6vw,40px);margin-bottom:18px;letter-spacing:-.01em}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.tag{background:var(--frost);border-radius:22px 22px 6px 22px;padding:26px}
+.tag .big{font:800 clamp(52px,14vw,88px)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em}
+.tag .big small{font-size:.4em;font-weight:700}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px}
+.card h3{font-size:22px;margin-bottom:8px}
+.card p{margin:0;color:var(--muted)}
+ul.facts{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.facts li{display:flex;gap:10px}
+ul.facts b{min-width:92px}
+.bars{display:flex;align-items:flex-end;gap:6px;height:130px;margin-top:8px}
+.bars div{flex:1;background:var(--frost);border-radius:4px 4px 0 0;position:relative;min-height:6px}
+.bars .peak{background:var(--accent)}
+.bars span{position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);font-size:12px;color:var(--muted);white-space:nowrap}
+.axis{margin-bottom:28px}
+.review{max-width:560px}
+.stars{color:var(--accent);font-size:22px;letter-spacing:2px}
+.who{font-weight:600;margin:6px 0 2px}
+.meta{color:var(--muted);font-size:14px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.tile{aspect-ratio:1;border-radius:14px;border:2px dashed var(--line);display:grid;place-items:center;text-align:center;padding:12px;color:var(--muted);font-size:14px;background:linear-gradient(135deg,var(--frost),transparent)}
+.note{color:var(--muted)}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#apercu">Isalem Glaçon</a>
+<nav aria-label="Navigation principale"><a href="#apercu">Aperçu</a><a href="#menu">Menu</a><a href="#avis">Avis</a><a href="#photos">Photos</a><a href="#actualites">Actualités</a></nav>
+</div></header>
+
+<main class="wrap">
+<div class="hero" id="apercu">
+<span class="status" id="status"><span class="dot"></span><span id="stxt">Ouvert de 8h à 20h</span></span>
+<h1>Des glaçons propres, livrés chez vous.</h1>
+<p class="lead">Glaçons alimentaires pour la maison, les bars et vos événements : anniversaires, mariages, baptêmes. Livraison à nos frais.</p>
+<div class="btns">
+<a class="btn main" href="tel:0707120130">Appeler le 07 07 12 01 30</a>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=C24F%2B9C%20Abidjan" target="_blank" rel="noopener">Voir l’itinéraire</a>
+</div>
+</div>
+
+<section id="menu">
+<h2>Menu</h2>
+<div class="grid">
+<div class="tag"><div>Glaçons alimentaires</div><div class="big">1000 <small>fr</small></div><div>le sac de 4 kg · livraison à nos frais</div></div>
+<div class="card"><h3>Glaçon alimentaire</h3><p>Pour vos boissons, votre commerce ou votre bar. Emballages propres.</p></div>
+<div class="card"><h3>Événements</h3><p>Anniversaire, mariage, baptême… Appelez-nous pour préparer la quantité qu’il vous faut.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Infos pratiques</h2>
+<div class="grid">
+<ul class="facts">
+<li><b>Horaires</b><span>Tous les jours, 8h – 20h</span></li>
+<li><b>Adresse</b><span>C24F+9C Abidjan, Angré, Abidjan</span></li>
+<li><b>Téléphone</b><a href="tel:0707120130">07 07 12 01 30</a></li>
+</ul>
+<div>
+<strong>Horaires d’affluence</strong>
+<div class="bars axis" role="img" aria-label="Affluence plus forte à 12h et à 18h">
+<div style="height:30%"><span>8h</span></div><div style="height:45%"><span>10h</span></div><div class="peak" style="height:100%"><span>12h</span></div><div style="height:50%"><span>14h</span></div><div style="height:60%"><span>16h</span></div><div class="peak" style="height:95%"><span>18h</span></div><div style="height:35%"><span>20h</span></div>
+</div>
+<span class="note">Pics à 12h et 18h : passez plutôt en dehors de ces heures.</span>
+</div>
+</div>
+</section>
+
+<section id="avis">
+<h2>Avis</h2>
+<div class="card review">
+<div class="stars" aria-label="5 sur 5">★★★★★</div>
+<p class="who">Stephanie Kipre</p>
+<p class="meta">Bar · 6 avis · il y a 4 ans</p>
+<p style="margin-top:12px;color:var(--ink)">Les emballages sont propres. Bonnes conditions de livraison.</p>
+</div>
+</section>
+
+<section id="photos">
+<h2>Photos</h2>
+<div class="tiles"><div class="tile">Photo des glaçons</div><div class="tile">Photo de la livraison</div><div class="tile">Photo d’un événement</div></div>
+<p class="note">Envoyez-moi vos photos et je les ajoute ici.</p>
+</section>
+
+<section id="actualites">
+<h2>Actualités</h2>
+<div class="card"><h3>Pas de nouvelle pour l’instant</h3><p>Appelez le 07 07 12 01 30 pour connaître les disponibilités du jour.</p></div>
+</section>
+</main>
+
+<footer><div class="wrap">Isalem Glaçon · Angré, Abidjan · 07 07 12 01 30</div></footer>
+
+<script>
+(function(){
+try{
+var h=new Date().getUTCHours(),open=h>=8&&h<20,s=document.getElementById('status');
+if(!open){s.classList.add('closed');document.getElementById('stxt').textContent='Fermé · ouvre à 8h'}
+else{document.getElementById('stxt').textContent='Ouvert maintenant · jusqu’à 20h'}
+}catch(e){}
+})();
+</script>
+</body>
+</html>
